@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        /* 자식 selector */
+        div>img {
+            width: 200px;
+        }
+        a>img {
+            width: 500px;
+        }
+
+        /* 자손 selector */
+        div img {
+            border: 5px solid blue;
+        }
+        div span {
+            color: gold;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <img src="../html/사자.jpeg" alt="">
+        <a href="">
+            <img src="../html/사자.jpeg" alt="">
+        </a>
+    </div>
+
+    <!-- 아래 div 내에 있는 span 요소들의 color : gold -->
+    <div>
+        <span>Lorem, ipsum dolor.</span>
+        <h1>Lorem, ipsum.<span>lorem1</span></h1>
+    </div>
+    <span>Lorem, ipsum dolor.</span>
+</body>
+</html>
