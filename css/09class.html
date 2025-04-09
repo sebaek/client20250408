@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .kirin {
+            border: dotted 5px green;
+        }
+        .kokiri {
+            background-color: gray;
+        }
+        h1.kirin {
+            color: white;
+        }
+        p.kirin {
+            color: yellow;
+        }
+        h1.kirin.kokiri {
+            width: 200px;
+        }
+        .kirin.kokiri {
+            border-radius: 50px;
+        }
+        .kokiri.kirin {
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <!-- h1.kirin>lorem3 -->
+    <h1 class="kirin">Lorem, ipsum dolor.</h1>
+    <!-- h1.kokiri>lorem3 -->
+    <h1 class="kokiri">Lorem, ipsum dolor.</h1>
+    <!-- h1.kirin>lorem1^p.kirin>lorem10 -->
+    <h1 class="kirin kokiri">Lorem.</h1>
+    <p class="kirin">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus, velit.</p>
+
+</body>
+</html>
