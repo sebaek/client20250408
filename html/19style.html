@@ -1,4 +1,80 @@
-<!-- 테이블,테이블 셀의 테두리 : 1px solid black -->
-<!-- 테이블 너비 : 400px -->
-<!-- 테이블 1 : 3행 4열 -->
-<!-- 테이블 2 : 4행 3열 -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- 테이블,테이블 셀의 테두리 : 1px solid black -->
+    <!-- 테이블 너비 : 400px -->
+    <style>
+        table {
+            border: 1px solid black;
+            width: 400px;
+            border-collapse: collapse;
+            margin: 10px 0;
+        }
+        td {
+            border: 1px solid black;
+        }
+        th {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 테이블 1 : 3행 4열 -->
+    <table>
+        <thead>
+            <tr>
+                <th>Lorem.</th>
+                <th>Lorem.</th>
+                <th>Lorem.</th>
+                <th>Lorem.</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Lorem.</td>
+                <td>Lorem.</td>
+                <td>Lorem.</td>
+                <td>Lorem.</td>
+            </tr>
+            <tr>
+                <td>Lorem.</td>
+                <td>Lorem.</td>
+                <td>Lorem.</td>
+                <td>Lorem.</td>
+            </tr>
+        </tbody>
+    </table>
+    <!-- 테이블 2 : 4행 3열 -->
+    <!-- table>thead>tr>th*3>lorem1^^^tbody>tr*3>td*3>lorem1 -->
+    <table>
+        <thead>
+            <tr>
+                <th>Lorem.</th>
+                <th>Libero!</th>
+                <th>Labore.</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Lorem.</td>
+                <td>Nemo?</td>
+                <td>Nihil?</td>
+            </tr>
+            <tr>
+                <td>Lorem.</td>
+                <td>Culpa!</td>
+                <td>Quidem!</td>
+            </tr>
+            <tr>
+                <td>Lorem.</td>
+                <td>Aliquam?</td>
+                <td>Atque.</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+
+</html>
