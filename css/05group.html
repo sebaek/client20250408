@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<!-- html>head+body -->
+<html>
+
+<head>
+    <style>
+        /* group selector */
+        h1,
+        h2 {
+            height: 60px;
+            border-radius: 50px;
+            color: white;
+            background-color: blue;
+        }
+
+        h2 {
+            border: 5px solid red;
+        }
+
+        a>img,
+        div+img {
+            border: 50px solid green;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- h1*2>lorem2^h2*2>lorem2 -->
+    <h1>Lorem, ipsum.</h1>
+    <h1>Et, exercitationem?</h1>
+    <h2>Lorem, ipsum.</h2>
+    <h2>Impedit, eum.</h2>
+
+    <img src="../html/사자.jpeg" alt="">
+    <a href=""><img src="../html/사자.jpeg" alt=""></a>
+    <div><img src="../html/사자.jpeg" alt=""></div>
+    <img src="../html/사자.jpeg" alt="">
+</body>
+
+</html>
