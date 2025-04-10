@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div:nth-child(odd) {
+            background-color: skyblue;
+        }
+        div:nth-child(even) {
+            background-color: gold;
+        }
+        /* 위아래 마진 겹쳐짐 */
+        #box1 {
+            margin-top: 20px;
+            margin-bottom: 30px;
+        }
+        #box2 {
+            margin-top: 10px;
+            margin-bottom: 12px;
+        }
+        /* 좌우 마진은 안겹침 */
+        #box5 {
+            margin: 10px 15px;
+        }
+        #box6 {
+            margin-left: 15px;
+        }
+        /* 7번 8번 박스에 좌우 마진을 적용 */
+    </style>
+</head>
+<body>
+    <!-- div#box$*4{$} -->
+    <div id="box1">1</div>
+    <div id="box2">2</div>
+    <div id="box3">3</div>
+    <div id="box4">4</div>
+    <hr>
+    <div style="display: flex; background-color: gray;">
+        <!-- div#box$@5*4{$@5} -->
+        <div id="box5">5</div>
+        <div id="box6">6</div>
+        <div id="box7">7</div>
+        <div id="box8">8</div>
+    </div>
+</body>
+</html>
