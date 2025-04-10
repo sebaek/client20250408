@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box1 {
+            width: 100px;
+            height: 50px;
+            background-color: blue;
+        }
+        #box2 {
+            /* 부모요소 너비의 10% */
+            width: 10%;
+            background-color: yellow;
+        }
+        #box3 {
+            width: 50%;
+            background-color: aqua;
+        }
+        #box4 {
+            /* viewport 너비 기준 */
+            width: 50vw;
+            background-color: orange;
+        }
+        #box5 {
+            width: 30vw;
+            margin: 0 auto;
+            background-color: dodgerblue;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div id="box1">
+            박스1
+        </div>
+        <div id="box2">
+            박스2
+        </div>
+    </div>
+    <hr>
+    <div style="width: 500px; background-color: gray;">
+        <div id="box3">
+            박스3
+        </div>
+        <div id="box4">
+            박스4
+        </div>
+    </div>
+
+    <hr>
+
+    <div id="box5">
+        박스5
+    </div>
+</body>
+</html>
