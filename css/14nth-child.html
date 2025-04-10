@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<!-- html>head>style^body -->
+<html>
+<head>
+    <style>
+        h1:nth-child(2) {
+            color: yellow;
+        }
+        h1:nth-child(odd) {
+            background-color: skyblue;
+        }
+        h1:nth-child(even) {
+            border: 5px solid red;
+        }
+
+        table {
+            width: 500px;
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid black;
+        }
+        th {
+            background-color: black;
+            color: white;
+        }
+
+        table.striped tr:nth-child(even) {
+            background-color: gainsboro;
+        }
+    </style>
+</head>
+<body>
+    <!-- h1*3>lorem1^div>h1*3>lorem1 -->
+    <h1>Lorem.</h1>
+    <h1>Reiciendis?</h1>
+    <h1>Fugit.</h1>
+    <div>
+        <h1>Lorem.</h1>
+        <h1>Facilis.</h1>
+        <h1>Placeat.</h1>
+    </div>
+    <h1>text</h1>
+
+    <!-- table>thead>tr>th*4>lorem1^^^tbody>tr*5>td*4>lorem1 -->
+    <table>
+        <thead>
+            <tr>
+                <th>Lorem.</th>
+                <th>Quas.</th>
+                <th>Unde.</th>
+                <th>Incidunt?</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Lorem.</td>
+                <td>Natus!</td>
+                <td>Repellendus?</td>
+                <td>Aut.</td>
+            </tr>
+            <tr>
+                <td>Lorem.</td>
+                <td>Excepturi.</td>
+                <td>Voluptate.</td>
+                <td>Eum?</td>
+            </tr>
+            <tr>
+                <td>Lorem.</td>
+                <td>Tenetur.</td>
+                <td>Velit.</td>
+                <td>Suscipit.</td>
+            </tr>
+            <tr>
+                <td>Lorem.</td>
+                <td>Facilis!</td>
+                <td>Recusandae.</td>
+                <td>Provident!</td>
+            </tr>
+            <tr>
+                <td>Lorem.</td>
+                <td>Dignissimos?</td>
+                <td>Necessitatibus!</td>
+                <td>Molestiae!</td>
+            </tr>
+        </tbody>
+    </table>
+    
+    <hr>
+    <!-- table>thead>tr>th*4>lorem1^^^tbody>tr*5>td*4>lorem1 -->
+    <table class="striped">
+        <thead>
+            <tr>
+                <th>Lorem.</th>
+                <th>Magnam!</th>
+                <th>Commodi!</th>
+                <th>Magnam?</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Lorem.</td>
+                <td>Optio.</td>
+                <td>Iusto!</td>
+                <td>Adipisci.</td>
+            </tr>
+            <tr>
+                <td>Lorem.</td>
+                <td>Aliquid?</td>
+                <td>Quod?</td>
+                <td>Perspiciatis?</td>
+            </tr>
+            <tr>
+                <td>Lorem.</td>
+                <td>Earum!</td>
+                <td>Delectus.</td>
+                <td>Vel!</td>
+            </tr>
+            <tr>
+                <td>Lorem.</td>
+                <td>Cumque!</td>
+                <td>Temporibus.</td>
+                <td>Porro.</td>
+            </tr>
+            <tr>
+                <td>Lorem.</td>
+                <td>Dolore.</td>
+                <td>Harum.</td>
+                <td>Vel!</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
