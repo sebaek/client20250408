@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body div.container {
+            display: flex;
+            background-color: gold;
+            height: 100px;
+        }
+        div:nth-child(even) {
+            background-color: skyblue;
+        }
+        div:nth-child(odd) {
+            background-color: beige;
+        }
+        #container1 {
+            /* 내부 요소를 가로기준 어떻게 배치할 지? */
+            justify-content: start;
+        }
+        #container2 {
+            justify-content: end;
+        }
+        #container3 {
+            justify-content: center;
+        }
+        #container4 {
+            justify-content: space-between;
+        }
+        #container5 {
+            justify-content: space-around;
+        }
+        #container6 {
+            justify-content: space-evenly;
+        }
+    </style>
+</head>
+<body>
+    <!-- .container>#box$*5{$}     -->
+    <div class="container" id="container1">
+        <div id="box1">1</div>
+        <div id="box2">2</div>
+        <div id="box3">3</div>
+        <div id="box4">4</div>
+        <div id="box5">5</div>
+    </div>
+    <hr>
+    <div class="container" id="container2">
+        <div id="box1">1</div>
+        <div id="box2">2</div>
+        <div id="box3">3</div>
+        <div id="box4">4</div>
+        <div id="box5">5</div>
+    </div>
+    <hr>
+    <div class="container" id="container3">
+        <div id="box1">1</div>
+        <div id="box2">2</div>
+        <div id="box3">3</div>
+        <div id="box4">4</div>
+        <div id="box5">5</div>
+    </div>
+    <hr>
+    <div class="container" id="container4">
+        <div id="box1">1</div>
+        <div id="box2">2</div>
+        <div id="box3">3</div>
+        <div id="box4">4</div>
+        <div id="box5">5</div>
+    </div>
+    <hr>
+    <div class="container" id="container5">
+        <div id="box1">1</div>
+        <div id="box2">2</div>
+        <div id="box3">3</div>
+        <div id="box4">4</div>
+        <div id="box5">5</div>
+    </div>
+    <hr>
+    <div class="container" id="container6">
+        <div id="box1">1</div>
+        <div id="box2">2</div>
+        <div id="box3">3</div>
+        <div id="box4">4</div>
+        <div id="box5">5</div>
+    </div>
+</body>
+</html>
