@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div:nth-child(odd) {
+            background-color: beige;
+        }
+        div:nth-child(even) {
+            background-color: skyblue;
+        }
+        div {
+            width: 100px;
+            height: 50px;
+            padding: 10px;
+            margin: 10px;
+            /* display : block, inline */
+            display: inline;
+        }
+    </style>
+</head>
+<body>
+    <!-- 요소의 크기와 패딩, 마진을 유지하고 가로 배치가 쉽지 않다. -->
+    <!-- div#box$*3>lorem1     -->
+    <div id="box1">Lorem.</div>
+    <div id="box2">In?</div>
+    <div id="box3">Enim?</div>
+</body>
+</html>
