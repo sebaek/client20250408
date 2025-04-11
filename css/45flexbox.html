@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,50 +12,38 @@
             margin-bottom: 10px;
             height: 70px;
         }
+
         .item:nth-child(odd) {
             background-color: skyblue;
         }
+
         .item:nth-child(even) {
             background-color: beige;
         }
-        #container1 > .item:nth-child(5) {
+        #container1 > .item,
+        #container2 > .item,
+        #container3 > .item {
+            width: 30px;
+        }
+        #gap {
             flex: 1;
         }
         #container2 > .item:nth-child(2) {
-            flex: 1;
+            margin-right: auto;
         }
-        #container3 > .item:nth-child(4),
-        #container3 > .item:nth-child(5) {
-            flex: 1;
+        #container3 > .item:nth-child(3) {
+            margin-left: auto;
         }
-        #container4 > .item:nth-child(4) {
-            flex: 3;
-        }
-        #container4 > .item:nth-child(5) {
-            flex: 2;
-        }
-
-        #container5 > .item {
-            flex: 1;
-        }
-        #container6 > .item:nth-child(1),
-        #container6 > .item:nth-child(5) {
-            width: 70px;
-        }
-
-        #container6 > .item:nth-child(3) {
-            flex: 1;
-        }
-
-        /* flex box 연습 해보기 */
 
     </style>
 </head>
+
 <body>
     <!-- .container#container$*10>.item*5{$} -->
     <div class="container" id="container1">
         <div class="item">1</div>
         <div class="item">2</div>
+        <div id="gap"></div>
         <div class="item">3</div>
         <div class="item">4</div>
         <div class="item">5</div>
@@ -122,5 +111,7 @@
         <div class="item">4</div>
         <div class="item">5</div>
     </div>
+
 </body>
+
 </html>
