@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #container1,
+        #container2,
+        #container3,
+        #container4,
+        #container5 {
+            width: 500px;
+            height: 300px;
+            background-color: skyblue;
+        }
+
+        #item1,
+        #item2,
+        #item3,
+        #item4,
+        #item5 {
+            background-color: beige;
+            width: 100px;
+            height: 50px;
+        }
+
+        #item1 {
+            /* 조상 요소 중 포지션된 요소 기준 */
+            /*  *포지션된 요소 : position이 static이 아니면 */
+            position: absolute;
+            /* left,right,top,bottom */
+            top: 10px;
+            left: 20px;
+        }
+        #container1 {
+            /* position 기본값 static */
+            /* position: static; */
+            position: relative;
+        }
+        #item2 {
+            position: absolute;
+            right: 0px;
+            bottom: 0px;
+        }
+        #container2 {
+            position: relative;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- #container$*5>#item$>lorem1 -->
+    <div id="container1">
+        <div id="item1">Lorem.</div>
+    </div>
+    <hr>
+    <div id="container2">
+        <div id="item2">Hic.</div>
+    </div>
+    <hr>
+    <style>
+        #wrapper3, #wrapper4 {
+            background-color: gold;
+            width: 350px;
+            height: 120px;
+        }
+        #item3, #item4 {
+            position: absolute;
+            right: 10px;
+            top: 10px
+        }
+        #wrapper3 {
+            position: relative;
+        }
+        #container4 {
+            position: relative;
+        }
+
+        #item5 {
+            /* 조상 중에 포지션된 요소가 없으면 */
+            /* root 요소(html) 기준 */
+            position: absolute;
+            top: 10px;
+            right: 20px;
+        }
+    </style>
+    <div id="container3">
+        <div id="wrapper3">
+            <div id="item3">Autem!</div>
+        </div>
+    </div>
+    <hr>
+    <div id="container4">
+        <div id="wrapper4">
+            <div id="item4">Dicta.</div>
+        </div>
+    </div>
+    <hr>
+    <div id="container5">
+        <div id="item5">Corrupti.</div>
+    </div>
+</body>
+
+</html>
