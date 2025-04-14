@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            width: 300px;
+            height: 900px;
+            background-color: skyblue;
+            position: relative;
+        }
+        .container>div {
+            border: 5px solid black;
+            width: 200px;
+            height: 200px;
+            font-size: 70px;
+        }
+        #item2 {
+            /* absolute : 정상적인 배치 흐름에서 빠짐 */
+            position: absolute;
+            right: 0px;
+            bottom: 0px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- .container>#item$*3{$} -->
+    <div class="container">
+        <div id="item1">1</div>
+        <div id="item2">2</div>
+        <div id="item3">3</div>
+    </div>
+</body>
+</html>
