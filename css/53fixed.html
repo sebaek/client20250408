@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 200px;
+            height: 100px;
+        }
+
+        div:nth-child(odd) {
+            background-color: beige;
+        }
+
+        div:nth-child(even) {
+            background-color: skyblue;
+        }
+        #item2 {
+            /* fixed : viewport 기준 */
+            /* 정상적 배치 흐름에서 빠짐  */
+            position: fixed;
+            top: 0px;
+            left: 0px;
+        }
+        #item1 {
+            margin-top: 150px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <!-- #item$*3{$} -->
+    <div id="item1">1</div>
+    <div id="item2">2</div>
+    <div id="item3">3</div>
+
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+</body>
+
+</html>
