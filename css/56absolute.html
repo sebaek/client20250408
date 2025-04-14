@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h3 {
+            display: none;
+            position: absolute;
+            background-color: white;
+            top: -10px;
+            left: 150px;
+            border: 1px solid black;
+        }
+        h1:hover + h3 {
+            display: block;
+        }
+        .container {
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+    <!-- (.container>(h1>lorem1^h3>lorem1))*10     -->
+    <div class="container">
+        <h1>Lorem.</h1>
+        <h3>Lorem.</h3>
+    </div>
+    <div class="container">
+        <h1>Blanditiis.</h1>
+        <h3>Minima.</h3>
+    </div>
+    <div class="container">
+        <h1>Voluptate!</h1>
+        <h3>Corporis.</h3>
+    </div>
+    <div class="container">
+        <h1>Fugit.</h1>
+        <h3>Deleniti?</h3>
+    </div>
+    <div class="container">
+        <h1>Ipsum.</h1>
+        <h3>Eius.</h3>
+    </div>
+    <div class="container">
+        <h1>Perspiciatis!</h1>
+        <h3>Veniam.</h3>
+    </div>
+    <div class="container">
+        <h1>Sint!</h1>
+        <h3>Nemo!</h3>
+    </div>
+    <div class="container">
+        <h1>Molestiae.</h1>
+        <h3>Cupiditate.</h3>
+    </div>
+    <div class="container">
+        <h1>Rem.</h1>
+        <h3>Accusantium.</h3>
+    </div>
+    <div class="container">
+        <h1>Autem.</h1>
+        <h3>Asperiores?</h3>
+    </div>
+</body>
+</html>
