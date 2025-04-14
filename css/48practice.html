@@ -5,7 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <style>
         .nemo-button {
@@ -129,76 +131,92 @@
         .side-menu-item:hover {
             background-color: #999;
         }
+        .fixed-top-menu {
+            position: fixed;
+            top: 0px;
+            left: 0px;
+            width: 100vw;
+            padding: 0px 24px 0px 8px;
+            box-sizing: border-box;
+            background-color: white;
+        }
+        .main-content-container {
+            margin-top: 114px;
+        }
     </style>
 </head>
 
 <body>
-    <div class="menu-container">
+    <div class="fixed-top-menu">
+        <div class="menu-container">
 
-        <div class="logo">
-            <span>
-                W
-            </span>
-        </div>
-        <div class="nemo-button">
-            Tutorials
-            <i class="fa-solid fa-caret-down"></i>
-        </div>
-        <div class="nemo-button">
-            Exercises
-            <i class="fa-solid fa-caret-down"></i>
-        </div>
-        <div class="nemo-button">
-            Certificates
-            <i class="fa-solid fa-caret-down"></i>
-        </div>
-        <div class="nemo-button">
-            Services
-            <i class="fa-solid fa-caret-down"></i>
-        </div>
-
-        <div class="cart-button">
-            <span>
-                <span style="color: blue;">
-                    <i class="fa-solid fa-cart-shopping"></i>
+            <div class="logo">
+                <span>
+                    W
                 </span>
-                Get Certified
-            </span>
+            </div>
+            <div class="nemo-button">
+                Tutorials
+                <i class="fa-solid fa-caret-down"></i>
+            </div>
+            <div class="nemo-button">
+                Exercises
+                <i class="fa-solid fa-caret-down"></i>
+            </div>
+            <div class="nemo-button">
+                Certificates
+                <i class="fa-solid fa-caret-down"></i>
+            </div>
+            <div class="nemo-button">
+                Services
+                <i class="fa-solid fa-caret-down"></i>
+            </div>
+
+            <div class="cart-button">
+                <span>
+                    <span style="color: blue;">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </span>
+                    Get Certified
+                </span>
+            </div>
+
+            <style>
+                .move-right {
+                    position: relative;
+                    left: 30px;
+                }
+
+                .left-padding {
+                    padding-left: 35px;
+                }
+            </style>
+            <div class="circle-button move-right">
+                <span>
+                    Sign Up
+                </span>
+            </div>
+            <div class="circle-button left-padding">
+                <span>
+                    Log in
+                </span>
+            </div>
         </div>
 
-        <style>
-            .move-right {
-                position: relative;
-                left: 30px;
-            }
-            .left-padding {
-                padding-left: 35px;
-            }
-        </style>
-        <div class="circle-button move-right">
-            <span>
-                Sign Up
-            </span>
-        </div>
-        <div class="circle-button left-padding">
-            <span>
-                Log in
-            </span>
+        <!-- 두번째 상단바 -->
+        <!-- div.second-top-bar>.second-menu-item*8>lorem1 -->
+        <div class="second-top-bar">
+            <div class="second-menu-item">Lorem.</div>
+            <div class="second-menu-item">Eaque?</div>
+            <div class="second-menu-item">Repellat.</div>
+            <div class="second-menu-item">Incidunt.</div>
+            <div class="second-menu-item">Numquam.</div>
+            <div class="second-menu-item">Doloribus!</div>
+            <div class="second-menu-item">Dolor.</div>
+            <div class="second-menu-item">Debitis.</div>
         </div>
     </div>
 
-    <!-- 두번째 상단바 -->
-    <!-- div.second-top-bar>.second-menu-item*8>lorem1 -->
-    <div class="second-top-bar">
-        <div class="second-menu-item">Lorem.</div>
-        <div class="second-menu-item">Eaque?</div>
-        <div class="second-menu-item">Repellat.</div>
-        <div class="second-menu-item">Incidunt.</div>
-        <div class="second-menu-item">Numquam.</div>
-        <div class="second-menu-item">Doloribus!</div>
-        <div class="second-menu-item">Dolor.</div>
-        <div class="second-menu-item">Debitis.</div>
-    </div>
 
     <!-- .main-content-container>.side-menu+.main-content+.ad-container -->
 
