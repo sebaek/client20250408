@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            width: 100px;
+            height: 100px;
+            margin-bottom: 10px;
+            background-color: skyblue;
+            position: relative;
+        }
+        .container h1:nth-child(odd) {
+            background-color: gold;
+        }
+        .container h1:nth-child(even) {
+            background-color: rosybrown;
+        }
+    </style>
+</head>
+<body>
+    <!-- .container*10>h1#item*2>lorem1 -->
+    <style>
+        #item1 {
+            position: absolute;
+            top: 10px;
+            z-index: 4;
+        }
+        #item2 {
+            position: absolute;
+            top: 30px;
+            z-index: 5; 
+        }
+    </style>
+    <div class="container">
+        <h1 id="item1">Lorem.</h1>
+        <h1 id="item2">Quia.</h1>
+    </div>
+
+    <style>
+        #item3, #item4 {
+            position: absolute;
+        }
+        #item3 {
+            top: 10px;
+        }
+        #item4 {
+            top: 22px;
+            opacity: 0.5;
+        }
+    </style>
+    <div class="container">
+        <h1 id="item3">Lorem.</h1>
+        <h1 id="item4">At!</h1>
+    </div>
+
+    <style>
+        #item5, #item6 {
+            position: absolute;
+        }
+        #item5 {
+            top: 10px;
+        }
+        #item6 {
+            top: 22px;
+            background-color: rgba(188, 143, 143, 0.5);
+        }
+    </style>
+
+    <div class="container">
+        <h1 id="item5">Lorem.</h1>
+        <h1 id="item6">Quae?</h1>
+    </div>
+    <div class="container">
+        <h1 id="item">Lorem.</h1>
+        <h1 id="item">Facilis!</h1>
+    </div>
+    <div class="container">
+        <h1 id="item">Lorem.</h1>
+        <h1 id="item">Libero.</h1>
+    </div>
+    <div class="container">
+        <h1 id="item">Lorem.</h1>
+        <h1 id="item">Adipisci.</h1>
+    </div>
+    <div class="container">
+        <h1 id="item">Lorem.</h1>
+        <h1 id="item">Laborum!</h1>
+    </div>
+    <div class="container">
+        <h1 id="item">Lorem.</h1>
+        <h1 id="item">Asperiores!</h1>
+    </div>
+    <div class="container">
+        <h1 id="item">Lorem.</h1>
+        <h1 id="item">Recusandae.</h1>
+    </div>
+    <div class="container">
+        <h1 id="item">Lorem.</h1>
+        <h1 id="item">Aliquam!</h1>
+    </div>
+</body>
+</html>
