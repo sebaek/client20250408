@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+
+</head>
+
+<body>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+        crossorigin="anonymous"></script>
+    <script>
+        // 명령문 (statement)
+        // 브라우저에 명령하는 각 한 문단
+        // 각 명령문은 ; 으로 끝나야함(생략 가능)
+        // 위에서 부터 순서대로 실행
+
+        let a = 30;
+        a = 50;
+
+        console.log(a);
+        
+        let b = 70;
+        b = 80;
+
+        console.log(b);
+
+        a = 90;
+
+        console.log(a, b);
+
+        document.querySelector("h1")
+            .innerText = "hello world";
+
+        document.querySelector("p")
+            .onclick = () => {
+                let a = 3;
+                console.log("hello");
+                console.log(a);
+            };
+            
+        
+        
+    </script>
+</body>
+
+</html>
