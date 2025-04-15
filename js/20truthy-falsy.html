@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+
+</head>
+
+<body>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+        crossorigin="anonymous"></script>
+    <script>
+        // truthy(true로 취급), falsy(false 취급)
+
+        // falsy
+        // boolean(false)
+        // number(0)
+        // string("")
+        // null, undefined, NaN
+
+        console.log(false || true);
+        console.log(false || false);
+        console.log(0 || true);
+        console.log(0 || false);
+        console.log("" || true);
+        console.log("" || false);
+
+
+        // truthy
+        // falsy가 아니면 truthy
+        // boolean (true)
+        // number (0이 아닌 값)
+        // string (""이 아닌 값)
+
+        console.log(true && true);
+        console.log(true && false);
+        console.log(1 && true);
+        console.log(3 && false);
+        console.log("js" && true);
+        console.log("hello" && false);
+
+        console.log(" " && true);
+        
+        
+
+        
+        
+        
+        
+        
+        
+        
+
+    </script>
+</body>
+
+</html>
