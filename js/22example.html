@@ -53,10 +53,19 @@
             document.querySelector("#resultInput").value = result;
         }
 
+        function divide() {
+            let num1 = document.querySelector("#input1").value;
+            let num2 = document.querySelector("#input2").value;
+
+            let result = Number(num1) / Number(num2);
+            document.querySelector("#resultInput").value = result;
+        }
+
         document.querySelector("#plusButton").onclick = add;
         document.querySelector("#minusButton").onclick = minus;
         document.querySelector("#timesButton").onclick = times;
-        
+        document.querySelector("#divideButton").onclick = divide;
+
 
 
 
