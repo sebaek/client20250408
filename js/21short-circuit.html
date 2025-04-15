@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+
+</head>
+
+<body>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+        crossorigin="anonymous"></script>
+    <script>
+        // short circuit 연산
+        // 논리연산 &&
+        // 피연산자 모두 true 일 때만 true, 나머지 false
+
+        console.log(true && true);     // true
+        console.log(true && false);    // false
+        console.log(false && true);    // false (short circuit)
+        console.log(false && false);   // false (short circuit)
+        
+        console.log(0 && true); 
+        console.log(0 && false);
+        console.log(1 && true);
+        console.log(1 && false);
+        console.log(1 && 11);
+        console.log(1 && 0);
+
+        // 논리연산 ||
+        // 피연산자가 모두 false 일 때만 false, 나머지 true
+        console.log(true || true); // true (short circuit)
+        console.log(true || false); // true (short circuit)
+        console.log(false || true); // true
+        console.log(false || false); // false
+
+        console.log("hello" || true);
+        console.log("hello" || false);
+        console.log("" || true);
+        console.log(0 || true);
+        console.log("" || false);
+        console.log(0 || false);
+        console.log(0 || "js");
+        console.log("" || "hello");
+        
+        
+        
+        
+
+        
+        
+        
+        
+        
+        
+    </script>
+</body>
+
+</html>
