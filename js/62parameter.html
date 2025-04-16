@@ -17,7 +17,17 @@
         crossorigin="anonymous"></script>
     <script>
         // printAdd 함수 정의 하기
-        
+        function printAdd(a, b) {
+            if (b === undefined) {
+                if (a === undefined) {
+                    console.log(0);
+                } else {
+                    console.log(a);
+                }
+            } else {
+                console.log(a + b);
+            }
+        }
 
         printAdd(9, 10); // 19 출력
         printAdd(3, 4); // 7 출력
