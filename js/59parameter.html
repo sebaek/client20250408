@@ -25,10 +25,17 @@
         integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
         crossorigin="anonymous"></script>
     <script>
-        function printAdd() {
+        function printAdd(num1, num2) {
             console.log("printAdd 실행됨");
             
-            document.querySelector("#result") = 
+            // console에 더한 값 출력하기
+            // console.log(Number(num1) + Number(num2));
+            let i = Number(num1);
+            let j = Number(num2);
+            console.log(i + j);
+            
+            
+
         }
         function action() {
             let a = document.querySelector("#input1").value;
