@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+
+</head>
+
+<body>
+    등급 :
+    <!-- input#input1 -->
+    <input type="text" id="input1">
+    <!-- button#btn1.btn.btn-primary -->
+    <button id="btn1" class="btn btn-primary">점수 확인</button>
+    <hr>
+    <!-- h3#result -->
+    <h3 id="result"></h3>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+        crossorigin="anonymous"></script>
+    <script>
+        function check() {
+            let grade = document.querySelector("#input1").value;
+
+            switch (grade) {
+                case "a":
+                case "A":
+                    document.querySelector("#result").innerText = "90점 이상";
+                    break;
+                case "b":
+                case "B":
+                    document.querySelector("#result").innerText = "80점 이상";
+                    break;
+                case "c":
+                case "C":
+                    document.querySelector("#result").innerText = "70점 이상";
+                    break;
+            }
+        }
+        document.querySelector("#btn1").onclick = check;
+    </script>
+</body>
+
+</html>
