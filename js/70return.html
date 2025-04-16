@@ -17,7 +17,34 @@
         crossorigin="anonymous"></script>
     <script>
         // evenOdd 함수 정의
-        
+        function evenOdd(v) {
+            if ((v % 2) === 0) {
+                return "짝수";
+            }
+
+            return "홀수";
+        }
+        function evenOdd1(v) {
+            if ((v % 2) === 0) {
+                return "짝수";
+            }
+
+            if ((v % 2) === 1) {
+                return "홀수";
+            }
+        }
+
+        function evenOdd2(v) {
+            if ((v % 2) === 0) {
+                return "짝수";
+            } else {
+                return "홀수";
+            }
+        }
+
+        function evenOdd3(v) {
+            return (v % 2) === 0 ? "짝수" : "홀수";
+        }
         
         let a = evenOdd(10);
         let b = evenOdd(11);
