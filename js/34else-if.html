@@ -27,7 +27,28 @@
         // 70 <= 점수 < 80  : C
         // 60 <= 점수 < 70 : D
         // 0 <= 점수 < 60 : F
-        // 점수 < 0 : 점수를 잘못 입력하였습니다.
+        // 점수 < 0 , 점수 > 100 : 점수를 잘못 입력하였습니다.
+
+        function check() {
+            let score = document.querySelector("#input1").value;
+            score = Number(score);
+
+            if (score >= 90 && score <= 100) {
+                document.querySelector("#result").innerText = "A 등급";
+            } else if (score >= 80 && score < 90) {
+                document.querySelector("#result").innerText = "B 등급";
+            } else if (score >= 70 && score < 80) {
+                document.querySelector("#result").innerText = "C 등급";
+            } else if (score >= 60 && score < 70) {
+                document.querySelector("#result").innerText = "D 등급";
+            } else if (score >= 0 && score < 60) {
+                document.querySelector("#result").innerText = "F 등급";
+            } else {
+                document.querySelector("#result").innerText = "잘못된 점수 입니다.";
+            }
+
+        }
+        document.querySelector("#btn1").onclick = check;
 
     </script>
 </body>
