@@ -46,6 +46,34 @@
         crossorigin="anonymous"></script>
     <script>
 
+        function check() {
+            let age = document.querySelector("#input1").value;
+            let genre = document.querySelector("#select1").value;
+            age = Number(age);
+
+            console.log(age, genre);
+
+            if (age > 0 && age < 20) {
+                // 청소년, 어린이 영화
+                if (genre === "normal") {
+                    document.querySelector("#result").innerText = "포켓몬";
+                } else if (genre === "horror") {
+                    document.querySelector("#result").innerText = "포켓몬 할로윈 에디션";
+                }
+            } else if (age >= 20) {
+                // 성인 영화
+                if (genre === "normal") {
+                    document.querySelector("#result").innerText = "범죄도시";
+                } else if (genre === "horror") {
+                    document.querySelector("#result").innerText = "곤지암";
+                }
+            } else {
+                // 잘못된 나이
+                document.querySelector("#result").innerText = "잘못된 나이입니다.";
+            }
+            
+        }
+        document.querySelector("#btn1").onclick = check;
         
     </script>
 </body>
