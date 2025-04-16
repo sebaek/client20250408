@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <!-- input:number#input$*2 -->
+    <input type="number" id="input1" value="0">
+    <input type="number" id="input2" value="0">
+    <!-- button#btn1.btn.btn-primary -->
+    <button id="btn1" class="btn btn-primary">+</button>
+    <hr>
+    <!-- h3#result -->
+    <h3 id="result"></h3>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+        crossorigin="anonymous"></script>
+    <script>
+        function printAdd() {
+            console.log("printAdd 실행됨");
+            
+            document.querySelector("#result") = 
+        }
+        function action() {
+            let a = document.querySelector("#input1").value;
+            let b = document.querySelector("#input2").value;
+
+            printAdd(a, b);
+        }
+
+        document.querySelector("#btn1").onclick = action;
+
+    </script>
+</body>
+
+</html>
