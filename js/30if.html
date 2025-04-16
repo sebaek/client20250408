@@ -11,10 +11,10 @@
 </head>
 
 <body>
-    <!-- input#input1+br+button.btn.btn-primary+hr+h3#result -->
-    나이 : <input type="text" id="input1">
+    <!-- input#input1+br+button#btn1.btn.btn-secondary+hr+h3#result -->
+    키 : <input type="text" id="input1">
     <br>
-    <button class="btn btn-primary">결과</button>
+    <button id="btn1" class="btn btn-secondary">결과</button>
     <hr>
     <h3 id="result"></h3>
 
@@ -22,18 +22,8 @@
         integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
         crossorigin="anonymous"></script>
     <script>
-        function check() {
-            let age = document.querySelector("#input1").value;
-            age = Number(age);
-
-            if (age < 18) {
-                document.querySelector("#result").innerText = "투표 불가능";
-            }
-            if (age >= 18) {
-                document.querySelector("#result").innerHTML = "투표 가능";
-            }
-        }
-        document.querySelector("button").onclick = check;
+        // 키 130 미만이면 "놀이기구 탑승금지";
+        // 키 130 이상이면 "놀이기구 탑승가능";
     </script>
 </body>
 
