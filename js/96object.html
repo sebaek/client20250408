@@ -37,7 +37,10 @@
         a.show(); // 메소드(method) 호출
 
         // b에 메소드 작성하기 
-        let b = {};
+        let b = {
+            hello: () => console.log("hello"),
+            greeting: () => console.log("안녕하세요")
+        };
 
         b.hello(); // hello
         b.greeting(); // 안녕하세요 
