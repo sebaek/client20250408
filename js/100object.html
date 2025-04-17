@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+
+</head>
+
+<body>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+        crossorigin="anonymous"></script>
+    <script>
+
+        let b = "hi";
+        let c = "hola";
+        let d = "안녕";
+        let address = "jeju";
+        let a = {
+            address: "seoul",
+            print: function(a) {
+                console.log(a);
+            },
+            show: function(b) {
+                // let d = "안녕하세요";
+                console.log(b);
+                console.log(c);
+                console.log(d);
+            },
+            display: function(c) {
+                // let address = "busan";
+                console.log(c);
+                console.log(address);
+                // 메소드에서 프로퍼티 접근 하기 
+                console.log(this.address);
+            }
+        }
+
+        a.print(33);
+        a.show("hello")
+        a.display("곤니찌와")
+
+        let e = {
+            firstName : "elon",
+            lastName: "musk",
+            // 일반 함수 this: 이 메소드를 가진 객체
+            printFullName: function() {
+                console.log(this.firstName, this.lastName);
+            }
+        }
+        e.printFullName(); // elon musk
+
+        let firstName = "알버트";
+        let lastName = "아인슈타인";
+        let f = {
+            firstName: "donald",
+            lastName: "trump",
+            // arrow function의 this: 정의 될 때의 객체
+            printFullName: () => {
+                console.log(this.firstName, this.lastName);
+            }
+        }
+        f.printFullName();
+    </script>
+</body>
+
+</html>
