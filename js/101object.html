@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+
+</head>
+
+<body>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+        crossorigin="anonymous"></script>
+    <script>
+        let a = {
+            name: "트럼프",
+            age: 77,
+            display: function() {
+                let text = "이름은 " + this.name + "이고 나이는 " + this.age + "세 입니다";
+                console.log(text);
+                
+            }
+        }
+        a.display(); // 이름은 트럼프이고 나이는 77세 입니다.
+        a.name = "일론";
+        a.age = 55
+        a.display(); // 
+
+        let b = {};
+        b.name = "테슬라";
+        b.age = 99;
+        b.display = a.display;
+        b.display(); // 이름은 테슬라이고 나이는 99세 입니다.
+    </script>
+</body>
+
+</html>
