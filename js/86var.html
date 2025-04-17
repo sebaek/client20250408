@@ -16,63 +16,48 @@
         integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
         crossorigin="anonymous"></script>
     <script>
-        let a = 3;
-        let b = function() {
-            console.log("어떤 함수 코드들...");
-        }
+        // let, const : 블록 scope
+        let a = 3; // 변수 선언 값 할당
+        const b = 5; // 상수 선언 후 초기화
+        
+        // var의 scope은 함수 scope
+        // 잘 사용안됨 -> let 으로 사용
+        var c = 7; // 변수 선언 후 값 할당 
 
         if (true) {
-            let c = 5;
-            console.log(c);
+            let a = 33;
+            var c = 77;
 
-            let d = function() {
-                console.log("d 함수");
-            }
-
-            d();
+            console.log(a); // 33
+            console.log(c); // 77
+            
         }
+        console.log(a); // 3
+        console.log(c); // 77
 
-        let e = 11;
-        let f = function() {
-            console.log("f 함수1");
-        }
-        if (true) {
-            let e = 12;
-            console.log(e);
-            let f = function() {
-                console.log("f 함수2");
-            }
-            f();
-        }
-        console.log(e); //11
-        f();
 
-        /* 다른 배경지식 배우고 다시 돌아오기 */
+        //
         function myCode() {
             console.log("myCode 함수1");
         }
-
+        var yourCode = function() {
+            console.log("yourCode 함수1");
+            
+        }
         if (true) {
             function myCode() {
                 console.log("myCode 함수2");
             }
-
+            var yourCode = function() {
+                console.log("yourCode 함수2");
+                
+            }
             myCode();
+            yourCode();
         }
         myCode();
-        /* */
-
-        function yourCode() {
-            let a = function() {
-                console.log("a 함수");
-            }
-            a();
-            function b() {
-                console.log("b 함수");
-            }
-            b();
-        }
         yourCode();
+        
         
     </script>
 </body>
