@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+
+</head>
+
+<body>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+        crossorigin="anonymous"></script>
+    <script>
+        let a = () => console.log("hi");
+        a();
+
+        // 만약 함수의 코드가 한 줄이면 {} 생략
+        // 리턴문이면 return 키워드도 삭제
+        let b = () => "hello";
+        let d = () => {
+            return "hello";
+        }
+        let e = function() {
+            return "hello";
+        }
+
+        let c = b();
+        let f = d();
+        let g = e();
+        console.log(c, f, g);
+        console.log(b(), d(), e());
+        
+        
+    </script>
+</body>
+
+</html>
