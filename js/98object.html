@@ -17,34 +17,22 @@
         crossorigin="anonymous"></script>
     <script>
         let a = {
-            name: "trump",
-            age: 77,
-            greeting: function() {
-                console.log("hello");
-            }
-        };
-        console.log(a.name); // trump
-        a.name = "elon";
-        console.log(a.name); // elon
-        a.greeting(); // hello
-        a.greeting = function() {
-            console.log("곤니찌와");
+            name: "trump"
         }
+        console.log(a.age); // undefined
+        a.age = 77;
+        console.log(a.age); // 77
+
+        // a.greeting(); // 오류
+        a.greeting = () => console.log("올라!");
         a.greeting();
 
-        let b = {
-            email: "gmail",
-            print: () => console.log("출력합니다.")
-        }
-        b.print();
-
-        // 여기에 코드 작성
-        b.print = () => console.log("문서를 출력합니다.");
-        
-        b.print(); // 문서를 출력합니다.
+        let b = {};
+        // 코드 작성
+        b.show = () => console.log("쇼!")
+        b.show(); // 쇼!
         
         
-
     </script>
 </body>
 
