@@ -22,9 +22,15 @@
         }
 
         // 각 myCode 호출 코드에 적절한 argument를 넣으세요.
-        myCode(); // 8 
-        myCode(); // 2
-        myCode(); // 15
+        myCode(function(a, b) {
+            return a + b;
+        }); // 8 
+        myCode(function(a, b) {
+            return a - b;
+        }); // 2
+        myCode(function(a, b) {
+            return a * b;
+        }); // 15
     </script>
 </body>
 
