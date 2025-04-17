@@ -16,38 +16,17 @@
         integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
         crossorigin="anonymous"></script>
     <script>
-        // function myCode() {
-        //     console.log("hi");
-        // }
-
-        // 이름 없는 함수 (anonymous function)
-        let myCode = function() {
-            console.log("hi");
+        function myCode(param) {
+            param();
         }
 
-        // 이름 있는 함수
-        function yourCode() {
+        // 아래 코드에 적절한 argument 넣으세요.
+        myCode(function() {
             console.log("hello");
-        }
-
-        let herCode = myCode;
-        let hisCode = yourCode;
-
-        myCode();
-        herCode();
-
-        yourCode();
-        hisCode();
-
-        function a() {
-            console.log("a 함수");
-        }
-
-        a(); // 
-
-        // 코드 작성
-        let b = a;
-        b(); // 'a 함수' 출력
+        }); // hello 
+        myCode(function() {
+            console.log("javascript");
+        }); // javascript
     </script>
 </body>
 
