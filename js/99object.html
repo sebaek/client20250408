@@ -16,9 +16,16 @@
         integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
         crossorigin="anonymous"></script>
     <script>
-        let a = {};
+        let a = {
+            printAdd: (a, b) => console.log(a + b),
+            printSub: (a, b) => console.log(a - b)
+        };
 
         // 코드 작성 
+        a.printAdd = (a, b) => console.log(a + b);
+        a.printSub = (a, b) => console.log(a - b);
+        a.printDivide = (a, b) => console.log(a / b);
+        a.printMultiple = (a, b) => console.log(a * b);
 
         a.printAdd(5, 6); // 11
         a.printSub(11, 7); // 4
