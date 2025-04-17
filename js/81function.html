@@ -16,19 +16,28 @@
         integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
         crossorigin="anonymous"></script>
     <script>
-        // first class function : 함수를 일반적인 값으로 사용
-
-        function myCode(param) {
-            param();
+        function afunc() {
+            return 5;
         }
 
-        // 아래 코드에 적절한 argument 넣으세요.
-        myCode(function() {
-            console.log("hello");
-        }); // hello 
-        myCode(function() {
-            console.log("javascript");
-        }); // javascript
+        function bfunc() {
+            return function() {
+                console.log("리턴된 함수");
+            }
+        }
+
+        let i = afunc();
+        console.log(i);
+
+        let j = bfunc();
+        j();
+
+        let k = bfunc;
+        let l = bfunc();
+        k();
+        l();
+
+        
     </script>
 </body>
 
