@@ -21,7 +21,7 @@
         let c = () => console.log("hi"); // function
 
         // object (객체)
-        // 여러 값을 가짐
+        // 여러 값(프로퍼티, property)을 가짐
         let d = {}; // 값이 없는 객체(object)
         let e = {name: "elon"}; // 값이 하나 있는 객체(object)
         let f = {name: "trump", job: "president"}; // 값이 두개 있는 객체(object)
@@ -33,17 +33,27 @@
         console.log(f);
         console.log(g);
         console.log(h);
-        // 객체의 각 값에 접근 하는 방법
+        // 객체의 프로퍼티에 접근 하는 방법
         console.log(e.name);  // elon
+        console.log(e["name"]); // elon
+        
         console.log(f.name);  // trump
+        console.log(f["name"]); // trup
+        
         console.log(f.job);   // president
+        console.log(f["job"]); // president
+        
 
         // 180
-
-        // seoul
-
-        // gmail
+        console.log(h.height);
         
+        // seoul
+        console.log(g.address);
+        
+        // gmail
+        console.log(h.email);
+        
+
         
         
         
