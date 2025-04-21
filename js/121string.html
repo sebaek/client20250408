@@ -37,6 +37,18 @@
         ];
 
         // 코드작성
+        let d = c.map((e) => {
+            // 첫번째 콤마위치
+            let firstComma = e.indexOf(",");
+            // 두번째 콤마위치
+            let secondComma = e.indexOf(",", firstComma + 1);
+
+            // 두 콤마사이의 문자열 추출
+            let secondWord = e.substring(firstComma + 1, secondComma);
+
+            // 리턴
+            return secondWord;
+        })
         console.log(d); // ["spring", "django", "node", "react", "servlet"]
         
         
