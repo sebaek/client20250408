@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+
+</head>
+
+<body>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+        crossorigin="anonymous"></script>
+    <script>
+        // split : 특정 문자열 기준으로 나눈 문자열들을 원소로 갖는 배열 리턴
+
+        let a = "spring,java,boot,css,react";
+        let b = a.split(",");
+        console.log(b);
+        let c = "spring, java, boot, css, react";
+        let d = c.split(",");
+        console.log(d);
+        let e = c.split(", ");
+        console.log(e);
+
+        let f = "spring , java, boot ,css,react";
+        let g = f.split(/\s*,\s*/); // regular expression(정규표현식)
+        console.log(g);
+
+        let h = "spring";
+        let i = h.split("");
+        console.log(i);
+
+        // 연습
+        //
+        let j = [
+            "java,spring,boot",
+            "python,django,ai",
+            "javascript,node,next",
+            "html,react,vue",
+            "jsp,servlet,thymeleaf"
+        ];
+
+        // 두번째 단어들로만 구성된 배열 출력
+        
+
+
+
+
+    </script>
+</body>
+
+</html>
