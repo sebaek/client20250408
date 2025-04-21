@@ -40,7 +40,25 @@
 
         console.log("--- 연습 donald가 나오는 위치 찾기---");
         let c = "Donald said that Donald told Donald to remind Donald that Donald was late";
+
+        console.log(c.indexOf("Donald"));
+        console.log(c.indexOf("Donald", 1));
+        console.log(c.indexOf("Donald", 18));
+        console.log(c.indexOf("Donald", 30));
+        console.log(c.indexOf("Donald", 47));
+        console.log(c.indexOf("Donald", 59));
+
+        console.log("--- 반복문 사용");
+
+        let i = c.indexOf("Donald");
+
+        while (i !== -1) {
+            console.log(i);
+            i = c.indexOf("Donald", i + 1);
+        }
         
+
+
         
         
         
