@@ -44,11 +44,16 @@
         let f = a.filter(e => e % 2)
         console.log(f);
 
+        console.log("------------");
+        
         // 연습
         let g = [9, 8, 99, 900, 3, 33, 3, 6, 2];
 
         // g 배열의 3의 배수만 순서(작은값->큰값)대로 출력코드 작성
         // filter, sort, forEach
+        let h = g.filter(e => e % 3 === 0);
+        h.sort((a, b) => a - b);
+        h.forEach(e => console.log(e));
         
         
         
