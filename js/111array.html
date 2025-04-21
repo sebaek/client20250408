@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+
+</head>
+
+<body>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+        crossorigin="anonymous"></script>
+    <script>
+        // forEach
+        //  : 파라미터로 받은 함수에 배열의 각 값을 넣어 실행
+
+        let a = [44, 33, 22];
+        console.log(a.length); // 3
+
+        let func1 = function(p) {
+            console.log("어떤 함수", p);
+        }
+
+        a.forEach(func1);
+
+        console.log("----------");
+        a.forEach(function(p) {
+            console.log("또 다른 함수", p);
+        })
+        console.log("----------");
+        a.forEach(p => console.log("애로우 펑션", p))
+        
+        console.log("--- for문으로 전체 탐색-----");
+        for (let i = 0; i < a.length; i++) {
+            console.log(a[i]);
+        }
+        
+        console.log("--- forEach메소드로 전체 탐색----");
+        a.forEach(e => console.log(e));
+        
+        
+        
+    </script>
+</body>
+
+</html>
