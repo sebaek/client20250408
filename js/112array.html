@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+
+</head>
+
+<body>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+        crossorigin="anonymous"></script>
+    <script>
+        // map
+        //  파라미터로 받은 함수에 배열의 각 아이템을 넣고
+        //  리턴 받은 값들로 새 배열을 만들어서 리턴
+
+        let a = [3, 4, 5];
+
+        let fun1 = function(p) {
+            console.log("fun1 함수", p);
+
+            return p * 2;
+        };
+
+        let b = a.map(fun1);
+        console.log(b);
+
+        let c = a.map(function(e) {
+            return e * 2;
+        });
+        console.log(c); // [6, 8, 10]
+
+        let d = a.map(e => e * 2);
+        console.log(d); // [6, 8, 10]
+
+        // 연습
+        let e = [9, 99, 900];
+
+        // 코드 작성 (map 사용)
+
+        console.log(f); // [3, 33, 300]
+        
+        
+        
+        
+
+    </script>
+</body>
+
+</html>
