@@ -25,7 +25,11 @@
             let text = document.querySelector("#head1").innerText;
             let word = document.querySelector("#input1").value;
 
-            let res = text.includes(word);
+            let upperText = text.toUpperCase();
+            let upperWord = word.toUpperCase();
+
+            let res = upperText.includes(upperWord);
+            
             if (res) {
                 document.querySelector("#result1").innerHTML = "있습니다.";
             } else {
