@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>내 웹 페이지</title>
+</head>
+
+<body>
+    <!-- h1>lorem1^p>lorem3+span>lorem1 -->
+    <h1>Lorem.</h1>
+    <p>Lorem, ipsum dolor.<span>Lorem.</span></p>
+  
+    <script>
+        // DOM
+        // (Document Object Model)
+        // javascript는 dom을 활용해서 문서를 읽거나 조작할 수 있다.
+
+        let a = document.querySelector("span");
+        console.log(a);
+        let b = document.querySelector("p");
+        console.log(b);
+        console.log(document.querySelector("h1"));
+
+        a.innerHTML = "hello";
+        console.log(a);
+
+        let c = document.querySelector("h1");
+        c.innerHTML = "HELLO DOM";
+        
+        
+        
+    </script>
+</body>
+
+</html>
