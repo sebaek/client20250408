@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+
+</head>
+
+<body>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+        crossorigin="anonymous"></script>
+    <script>
+        // 객체 (property, method)
+        let a = {
+            address: "seoul",
+            email: "gmail",
+            display: function() {
+                console.log("hello")
+            },
+            greeting: function() {
+                console.log("안녕")
+            }
+        }
+
+        // 배열은 객체 
+        let b = [33, 44, 55, 66];
+        console.log(b.length); // length property
+        b.sort();// sort method
+        b.forEach(() => {}); // forEach method
+        b.fill(3); // fill method
+        b.filter(() => {}); // filter method
+
+        let c = [99, 11, 44, 88, 77, 33];
+        // sort 
+        console.log(c); // 정렬 전
+        c.sort(); //정렬
+        console.log(c); // 정렬 후
+
+        let d = ["12", "3", "42", "4"];
+        console.log(d);
+        d.sort();
+        console.log(d);
+
+        // 
+        let e = [7, 2, 1, 3];
+        console.log(e); // 7, 2, 1, 3
+        e.sort();
+        console.log(e[3]); // ?
+        
+        
+        
+        
+
+    </script>
+</body>
+
+</html>
