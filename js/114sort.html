@@ -53,10 +53,15 @@
         // string 정렬
         b.sort(); 
         console.log(b);
-        
+
         // 큰 수가 나중에 오도록 정렬
+        b.sort((a, b) => a - b);
+        console.log(b);
         
         // 작은 수가 나중에 오도록 정렬
+        b.sort((a, b) => b - a);
+        console.log(b);
+        
 
 
         
