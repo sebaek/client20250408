@@ -16,38 +16,33 @@
         integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
         crossorigin="anonymous"></script>
     <script>
-        // length property
-        // chatAt() : 특정 위치의 문자 리턴
+        // trim : 앞뒤 공백 제거한 새 문자열 리턴
 
-        let a = "javascript";
-        console.log(a);
-        console.log(a.length); // 10
-        let b = a.charAt(3);
-        console.log(b); // a
-        let c = a.charAt(7);
-        console.log(c); // i
-        console.log(a.charAt(8)); // p
-        console.log(a.charAt(9)); // t
-        console.log(a.charAt(10)); // ""
+        let a = "   java";
+        console.log(a); // "   java"
+        let b = a.trim();
+        console.log(b); // "java"
 
-        // charAt에 넣을 수 있는 index 값
-        // 0 ~ (length - 1)
+        let c = "java    ";
+        let d = c.trim();
+        console.log(d); // "java"
 
-        let d = "java";
-        let e = "string";
+        let e = "   java    ";
+        let f = e.trim();
+        console.log(f); // "java"
 
-        console.log(d.charAt(3)); // a
-        console.log(e.charAt(5)); // g
+        let g = "   j  a   v  a   ";
+        let h = g.trim();
+        console.log(h); // "j  a   v  a"
 
-        console.log(d.charAt(d.length - 1)); // a
-        console.log(e.charAt(e.length - 1)); // g
+        // 연습
+        let i = "  spring  ";
+        // 코드 작성
+
+        console.log(j.charAt(j.length - 1)); // g
         
         
         
-        
-        
-        
-
         
         
         
