@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <!-- id, class, tagName -->
+    <!-- (h1>lorem1^p>lorem3^h3>lorem2)*3 -->
+    <h1>Lorem.</h1>
+    <p>Lorem, ipsum dolor.</p>
+    <h3>Lorem, ipsum.</h3>
+    <h1>Laboriosam.</h1>
+    <p>Neque, quae tempore.</p>
+    <h3>Earum, sequi.</h3>
+    <h1>Quam!</h1>
+    <p>Culpa, eligendi dolorem?</p>
+    <h3>Inventore, odio.</h3>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+        crossorigin="anonymous"></script>
+    <script>
+        // getElementsByTagName : tag명으로 선택된 요소들을 리턴
+        let a = document.getElementsByTagName("h1");
+        for (let i = 0; i < a.length; i++) {
+            console.log(a[i]);
+        }
+        // 연습 p 요소들을 선택해서 모두 탐색 출력
+        let b = document.getElementsByTagName("p");
+        for (let i = 0; i < b.length; i++) {
+            console.log(b[i]);
+        }
+        // 연습 h3 요소들을 모두 탐색 출력
+        let c = document.getElementsByTagName("h3");
+        for (let i = 0; i < c.length; i++) {
+            console.log(c[i])
+        }
+
+    </script>
+</body>
+
+</html>

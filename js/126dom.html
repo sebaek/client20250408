@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <!-- h1#head$*5>lorem1 -->
+    <h1 id="head1" class="note">Lorem.</h1>
+    <h1 id="head2" class="high">Fugit!</h1>
+    <h1 id="head3" class="note low high">Vero!</h1>
+    <h1 id="head4" class="high">Aliquid!</h1>
+    <h1 id="head5" class="note low mid">Ex.</h1>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+        crossorigin="anonymous"></script>
+    <script>
+        let a = document.getElementById("head1");
+        console.log(a);
+        
+        // getElementsByClassName : 특정 클래스에 속한 요소들 리턴
+        let b = document.getElementsByClassName("note");
+        console.log(b.length); // 3
+        console.log(b[0]);
+        console.log(b[1]);
+        console.log(b[2]);
+
+        console.log("--- for 문으로 전체 탐색 ---");
+        let c = document.getElementsByClassName("high");
+        for (let i = 0; i < c.length; i++) {
+            console.log(c[i]);
+        }
+
+        console.log("--- low 클래스를 가진 요소들을 전체 탐색 ");
+        let d = document.getElementsByClassName("low");
+        for (let i = 0; i < d.length; i++) {
+            console.log(d[i]);
+        }
+        
+        
+        
+        
+    </script>
+</body>
+
+</html>
