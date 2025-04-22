@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <!-- #box$*3 -->
+    <div id="box1"></div>
+
+    <button id="btn1">박스2에 추가</button>
+    <div id="box2"></div>
+
+    <hr>
+    <button id="btn2">append 박스3안 마지막 자식으로 추가</button>
+    <button id="btn3">prepend 박스3안 첫째 자식으로 추가</button>
+    <button id="btn4">after 박스3옆 다음 형제로 추가</button>
+    <button id="btn5">before 박스3옆 이전 형제로 추가</button>
+    <div id="box3"></div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+        crossorigin="anonymous"></script>
+    <script>
+        let b1 = document.querySelector("#box1");
+        // 새 요소 만들기 createElement
+        let h = document.createElement("h1");
+        // 만든 새 요소 추가하기 
+        b1.append(h);
+
+        let btn1 = document.querySelector("#btn1");
+        btn1.addEventListener("click", function() {
+            let p = document.createElement("p");
+            let b2 = document.querySelector("#box2");
+            b2.append(p);
+        });
+
+        // btn2 클릭시 box3의 마지막 자식 추가
+        document.querySelector("#btn2").addEventListener("click", function() {
+            let elem = document.createElement("h3")
+            document.querySelector("#box3").append(elem);
+        });
+
+        // btn3 클릭시 box3의 첫번째 자식 추가
+        document.querySelector("#btn3").addEventListener("click", function() {
+            let elem = document.createElement("h4")
+            document.querySelector("#box3").prepend(elem);
+        });
+
+        // btn4 클릭시 box3의 다음 형제 추가
+        document.querySelector("#btn4").addEventListener("click", function() {
+            let elem = document.createElement("h5")
+            document.querySelector("#box3").after(elem);
+        });
+
+        // btn5 클릭시 box3의 이전 형제 추가
+        document.querySelector("#btn5").addEventListener("click", function() {
+            let elem = document.createElement("h6")
+            document.querySelector("#box3").before(elem);
+        });
+    </script>
+</body>
+
+</html>
