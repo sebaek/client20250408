@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <!-- h1#head$*10>lorem1+button#btn${지우기} -->
+    <h1 id="head1">Lorem.<button id="btn1">지우기</button></h1>
+    <h1 id="head2">Consequuntur!<button id="btn2">지우기</button></h1>
+    <h1 id="head3">Rem!<button id="btn3">지우기</button></h1>
+    <h1 id="head4">Sequi?<button id="btn4">지우기</button></h1>
+    <h1 id="head5">Culpa.<button id="btn5">지우기</button></h1>
+    <h1 id="head6">Tempore.<button id="btn6">지우기</button></h1>
+    <h1 id="head7">Neque.<button id="btn7">지우기</button></h1>
+    <h1 id="head8">Earum.<button id="btn8">지우기</button></h1>
+    <h1 id="head9">Corporis.<button id="btn9">지우기</button></h1>
+    <h1 id="head10">Repellendus.<button id="btn10">지우기</button></h1>
+
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+        crossorigin="anonymous"></script>
+    <script>
+
+        let h5 = document.querySelector("#head5");
+        // remove
+        h5.remove();
+
+        document.querySelector("#btn1").addEventListener("click", function() {
+            document.querySelector("#head1").remove();
+        })
+
+        // 두번째 버튼( #btn2 )을 클릭하면 #head2가 지워지도록 코드 작성
+        document.querySelector("#btn2").addEventListener("click", function() {
+            document.querySelector("#head2").remove();
+        })
+    </script>
+</body>
+
+</html>
