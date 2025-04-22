@@ -15,7 +15,7 @@
     <button id="btn1">#box에 마지막 자식 추가</button>
     <button id="btn2">#box에 첫번째 자식 추가</button>
     <button id="btn3">#box에 다음 형제 추가</button>
-    <button id="btn4">#box에 이전 형제 추가가</button>
+    <button id="btn4">#box에 이전 형제 추가</button>
     <div id="box"></div>
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
@@ -23,6 +23,23 @@
         crossorigin="anonymous"></script>
     <script>
         // 코드 작성 
+
+        document.querySelector("#btn1").addEventListener("click", function() {
+            let elem = document.createElement("p");
+            document.querySelector("#box").append(elem);
+        });
+        document.querySelector("#btn2").addEventListener("click", function() {
+            let elem = document.createElement("p");
+            document.querySelector("#box").prepend(elem);
+        });
+        document.querySelector("#btn3").addEventListener("click", function() {
+            let elem = document.createElement("p");
+            document.querySelector("#box").after(elem);
+        });
+        document.querySelector("#btn4").addEventListener("click", function() {
+            let elem = document.createElement("p");
+            document.querySelector("#box").before(elem);
+        });
     </script>
 </body>
 
