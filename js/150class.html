@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <!-- p#para1.note.error.special.dark>lorem1 -->
+    <p id="para1" class="note herror special dark">Lorem.</p>
+    <button id="btn1">토글</button>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+        crossorigin="anonymous"></script>
+    <script>
+        // 불편한 코드
+        let a = document.querySelector("#para1").className;
+        console.log(a);
+
+        let b = a.includes("error");
+        console.log(b);
+
+        let c = a.split(" ");
+        for (let i = 0; i < c.length; i++) {
+            if (c[i] === "herror") {
+                console.log("있다")
+            }
+        }
+
+        // classList property로 class를 읽거나 조작할 수 있음
+        let d = document.querySelector("#para1").classList;
+
+        // 해당 클래스가 있는지?
+        console.log(d.contains("error"));
+        console.log(d.contains("herror"));
+
+        // 클래스 추가하기
+        d.add("react");
+        d.add("css");
+
+        // 클래스 삭제하기
+        d.remove("dark");
+        d.remove("herror");
+        d.remove("light");
+
+        // 클래스 toggle : 없으면 추가, 있으면 삭제 
+        document.querySelector("#btn1").addEventListener("click", function() {
+            let l = document.querySelector("#para1").classList;
+            l.toggle("light");
+        })
+
+
+        
+
+        
+
+    </script>
+</body>
+
+</html>
