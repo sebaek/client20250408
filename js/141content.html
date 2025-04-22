@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <!-- div#box$*5 -->
+    <div id="box1">
+        hello javascript
+    </div>
+    <div id="box2">
+        hi 자바
+    </div>
+    <div id="box3">
+        <!-- h1>lorem1^p>lorem3 -->
+        <h1>Lorem.</h1>
+        <p>Lorem, ipsum dolor.</p>
+    </div>
+    <div id="box4">
+        <!-- h1>lorem1^p>lorem3 -->
+        <h1>Lorem.</h1>
+        <p>Lorem, ipsum dolor.</p>
+    </div>
+    <div id="box5"></div>
+    <div id="box6"></div>
+    <div id="box7"></div>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+        crossorigin="anonymous"></script>
+    <script>
+        // content 
+        let b1 = document.querySelector("#box1");
+        let c1 = b1.textContent;
+        console.log(c1);
+
+        b1.textContent = "안녕 자바스크립트";
+        
+        console.log(document.querySelector("#box2").textContent);
+
+        let c3 = document.querySelector("#box3").textContent;
+        console.log(c3);
+        document.querySelector("#box3").textContent = "바꾼 콘텐츠";
+        
+        // innerHTML
+        let c4 = document.querySelector("#box4").innerHTML;
+        console.log(c4);
+        // 덮어씀
+        document.querySelector("#box4").innerHTML = "hello 바꾼 값";
+
+        // 덮어씀 
+        let content = "<h3>hello 새 콘텐츠 </h3>";
+        document.querySelector("#box5").textContent = content;
+        document.querySelector("#box6").innerHTML = content;
+        document.querySelector("#box7").innerText = content;
+        
+    </script>
+</body>
+
+</html>
