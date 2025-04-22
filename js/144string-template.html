@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <div id="box1"></div>
+    <div id="box2"></div>
+    <div id="box3"></div>
+    <div id="box4"></div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+        crossorigin="anonymous"></script>
+    <script>
+        // string 표현방법 : "", '', ``
+        let a = "hello";
+        let b = 'hello';
+        let c = `hello`;
+
+        // string-template ``의 장점
+        let d = `
+            여러 줄을
+            작성하기 편하다.
+            여러 줄 작성시 사용하자.
+        `;
+
+        // 새 요소 생성 후 append
+        let elem = document.createElement("h1");
+        elem.textContent = "hello javascript";
+        document.querySelector("#box1").append(elem);
+
+
+        // innerHTML로 덮어쓰기
+        document.querySelector("#box2").innerHTML = "<h1>hello javascript</h1>";
+
+        document.querySelector("#box3").innerHTML = "<h1>hello <span style='color: blue'>javascript</span></h1>"
+
+        document.querySelector("#box4").innerHTML = `
+            <h1>
+                hello
+                <span style="color: red;">
+                    javascript
+                </span>
+            </h1>
+        `;
+
+    </script>
+</body>
+
+</html>
