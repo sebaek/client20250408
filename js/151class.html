@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <style>
+        .done {
+            text-decoration-line: line-through;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- ul#list1>li*10>lorem1+button{완료} -->
+    <ul id="list1">
+        <li>Lorem.<button>완료</button></li>
+        <li>Libero!<button>완료</button></li>
+        <li>Repellat.<button>완료</button></li>
+        <li>Minus.<button>완료</button></li>
+        <li>In?<button>완료</button></li>
+        <li>Nam!<button>완료</button></li>
+        <li>Impedit!<button>완료</button></li>
+        <li>Unde.<button>완료</button></li>
+        <li>Magni.<button>완료</button></li>
+        <li>Ratione.<button>완료</button></li>
+    </ul>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+        crossorigin="anonymous"></script>
+    <script>
+        let buttons = document.querySelectorAll("button");
+        for (let i = 0; i < buttons.length; i++) {
+            buttons[i].addEventListener("click", () => {
+                buttons[i].parentElement.classList.toggle("done");
+
+                if (buttons[i].parentElement.classList.contains("done")) {
+                    buttons[i].textContent = "취소";
+                } else {
+                    buttons[i].textContent = "완료";
+                }
+            })
+        }
+    </script>
+</body>
+
+</html>
