@@ -28,6 +28,11 @@
             let btn = document.createElement("button");
             // 버튼에 "삭제" 텍스트 추가
             btn.textContent = "삭제";
+
+            btn.addEventListener("click", function() {
+                elem.remove();
+            })
+            
             elem.append(btn);
             b.append(elem);
         });
