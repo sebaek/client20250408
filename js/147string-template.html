@@ -40,7 +40,15 @@
         });
         // string-template 사용해서
         // 오른쪽 요소에 같은 일이 일어나게 코드 작성
-        
+        document.querySelector("#btn2").addEventListener("click", function() {
+            let v = document.querySelector("#input2").value;
+            
+            let t = `<li>${v}</li>`;
+
+            let o = document.querySelector("#list2").innerHTML;
+            document.querySelector("#list2").innerHTML = t + o;
+        })
+
     </script>
 </body>
 
