@@ -37,7 +37,13 @@
 
         // 두번째 input focus 얻을 때 '주소를 입력하세요'가 다음 span에 출력
         //                    잃을 때 span에 출력된 내용 삭제
-        
+        let b = document.querySelector("#input2");
+        b.onfocus = function() {
+            b.nextElementSibling.innerHTML = "주소를 입력하세요";
+        }
+        b.onblur = function() {
+            b.nextElementSibling.innerHTML = "";
+        }
     </script>
 </body>
 
