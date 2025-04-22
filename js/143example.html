@@ -21,7 +21,10 @@
     <script>
         // input에 입력된 값이 h3요소 text 컨텐츠로 출력되게 코드 작성
         //  (keyup 이벤트 발생 시 )
-
+        document.querySelector("#input1").addEventListener("keyup", function() {
+            let v = document.querySelector("#input1").value;
+            document.querySelector("#head1").textContent = v;
+        });
     </script>
 </body>
 
