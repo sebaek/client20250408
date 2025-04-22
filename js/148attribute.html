@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <!-- p#para1.note.error[title='my paragraph']>lorem3 -->
+    <p id="para1" class="note error" title="my paragraph">Lorem, ipsum dolor.</p>
+    <!-- input#input1.note[name=address][value=seoul] -->
+    <input type="text" id="input1" class="note" name="address" value="seoul">
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+        crossorigin="anonymous"></script>
+    <script>
+        // getAttribute : attribute 값 얻기
+        let p = document.querySelector("#para1");
+        let i = p.getAttribute("id");
+        let c = p.getAttribute("class");
+        let t = p.getAttribute("title");
+        console.log(i, c, t);
+        
+        let inp = document.querySelector("#input1");
+        console.log(inp.getAttribute("type"));
+        console.log(inp.getAttribute("value"));
+        console.log(inp.getAttribute("name"));
+
+        // setAttribute : attribute 값 변경하기
+        p.setAttribute("class", "special line");
+        p.setAttribute("title", "내가 만든 문단");
+        
+        // input 요소의 class, value 값 변경
+        inp.setAttribute("class", "hello java");
+        inp.setAttribute("value", "react");
+        
+
+    </script>
+</body>
+
+</html>

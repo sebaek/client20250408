@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <!-- img#img1[src][alt][title] -->
+    <img src="../html/사자.jpeg" alt="사자" id="img1" title="라이온">
+
+    <input type="text" id="input1" value="hello">
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+        crossorigin="anonymous"></script>
+    <script>
+        // getAttribute, setAttribute 메소드 활용
+        // src attribute 읽기
+        let s1 = document.querySelector("#img1").getAttribute("src");
+        console.log(s1);
+
+        // src attribute 바꾸기 
+        document.querySelector("#img1").setAttribute("src", "../html/고양이.jpeg");
+        
+
+        // src property를 활용
+        let s2 = document.querySelector("#img1").src;
+        console.log(s2);
+
+        document.querySelector("#img1").src = "../html/강아지.jpeg";
+
+        // alt, title attribute를 property를 사용해서 바꾸기
+        document.querySelector("#img1").alt = "lion";
+        document.querySelector("#img1").title = "무서운 사자";
+
+        let v1 = document.querySelector("#input1").getAttribute("value");
+        let v2 = document.querySelector("#input1").value;
+        console.log(v1, v2);
+        
+        
+        
+    </script>
+</body>
+
+</html>
