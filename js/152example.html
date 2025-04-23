@@ -7,7 +7,11 @@
     <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
-
+    <style>
+        .done {
+            text-decoration-line: line-through;
+        }
+    </style>
 </head>
 
 <body>
@@ -24,7 +28,59 @@
         integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
         crossorigin="anonymous"></script>
     <script>
-        
+        document.querySelector("#btn1").addEventListener("click", function() {
+            // input 요소 입력된 value
+            let i = document.querySelector("#input1");
+            let v = i.value;
+
+            // 를 컨텐츠로 갖는 li을 만들어서
+            let newLi = document.createElement("li");
+            newLi.textContent = v;
+
+            // ul에 붙이기
+            let ul = document.querySelector("#list1");
+            ul.append(newLi);
+
+            // 완료 버튼 만들어서
+            let doneButton = document.createElement("button");
+            doneButton.textContent = "완료";
+
+            // 완료 버튼 클릭시
+            doneButton.addEventListener("click", function() {
+                // newLi의 'done' class 추가 / 삭제
+                newLi.classList.toggle("done");
+
+                if (newLi.classList.contains("done")) {
+                    // done 클래스가 있으면
+                    // 버튼의 text를 '취소'
+                    doneButton.textContent = "취소";
+                } else {
+                    // 없으면 text를 '완료'
+                    doneButton.textContent = "완료";
+                }
+
+            })
+
+            // li에 붙이기
+            newLi.append(doneButton);
+
+            // 삭제 버튼 만들어서
+            let removeButton = document.createElement("button");
+            removeButton.textContent = "삭제";
+
+            // 삭제 버튼 클릭시 
+            removeButton.addEventListener("click", function() {
+                // newLi 삭제(remove)
+                newLi.remove();
+            });
+
+            // li에 붙이기
+            newLi.append(removeButton)
+
+            // input 초기화
+            i.value = "";
+
+        });
     </script>
 </body>
 
