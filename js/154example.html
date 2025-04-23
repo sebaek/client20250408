@@ -118,8 +118,17 @@
         integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
         crossorigin="anonymous"></script>
     <script>
+
+        // 여러 요소에 사용될 아이디 번호 
+        let globalSequence = 0;
+
         // + 클릭하면
         document.querySelector("#btn1").addEventListener("click", function() {
+            // sequence 1 더하기
+            globalSequence++;
+
+            let sequence = globalSequence;
+
             // input에 있는 value를 읽어서
             let input = document.querySelector("#input1");
             let v = input.value;
@@ -136,11 +145,12 @@
             
             let newItem = document.createElement("li");
             newItem.className = "list-group-item d-flex justify-content-between";
+
             newItem.innerHTML = `
-                        <div>${v}</div>
+                        <div id="todo-text-${sequence}">${v}</div>
                         <div>
                             <div class="d-flex gap-2">
-                                <button class="btn btn-outline-info btn-sm">
+                                <button id="done-btn-${sequence}" class="btn btn-outline-info btn-sm">
                                     <i class="fa-solid fa-check"></i>
                                 </button>
                                 <button class="btn btn-outline-danger btn-sm">
@@ -153,6 +163,32 @@
             // ul에 붙이기
             let ul = document.querySelector("#list1");
             ul.append(newItem);
+
+            // dom 에 있는 done-btn-1 버튼에 click event 함수 추가하기
+            let doneBtn = document.querySelector(`#done-btn-${sequence}`);
+            doneBtn.addEventListener("click", function() {
+                // 텍스트가 있는 요소에
+                let textDiv = document.querySelector(`#todo-text-${sequence}`);
+                // text-decoration-line-through 클래스 추가 / 삭제
+                textDiv.classList.toggle("text-decoration-line-through");
+
+                // text-decoration-line-through 클래스가 있으면
+                if (textDiv.classList.contains("text-decoration-line-through")) {
+                    // 버튼 내용을 back 아이콘으로
+                    doneBtn.innerHTML = `<i class="fa-solid fa-rotate-left"></i>`;
+                    // 버튼 색 secondary 로
+                    doneBtn.classList.add("btn-outline-secondary");
+                    doneBtn.classList.remove("btn-outline-info");
+                } else {
+                    // 없으면 check 아이콘으로
+                    doneBtn.innerHTML = `<i class="fa-solid fa-check"></i>`;
+
+                    // 버튼 색 info 로
+                    doneBtn.classList.remove("btn-outline-secondary");
+                    doneBtn.classList.add("btn-outline-info");
+                }
+
+            })
         })
 
 
