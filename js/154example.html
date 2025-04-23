@@ -118,7 +118,46 @@
         integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
         crossorigin="anonymous"></script>
     <script>
-        
+        // + 클릭하면
+        document.querySelector("#btn1").addEventListener("click", function() {
+            // input에 있는 value를 읽어서
+            let input = document.querySelector("#input1");
+            let v = input.value;
+
+            // input value 초기화
+            input.value = "";
+
+            // 새 li 만들어서
+            // let newItem = document.createElement("li");
+            // let newdiv = document.createElement("div");
+            // newdiv.textContent = v;
+            // newItem.append(newdiv);
+            // newItem.className = "list-group-item d-flex justify-content-between";
+            
+            let newItem = document.createElement("li");
+            newItem.className = "list-group-item d-flex justify-content-between";
+            newItem.innerHTML = `
+                        <div>${v}</div>
+                        <div>
+                            <div class="d-flex gap-2">
+                                <button class="btn btn-outline-info btn-sm">
+                                    <i class="fa-solid fa-check"></i>
+                                </button>
+                                <button class="btn btn-outline-danger btn-sm">
+                                    <i class="fa-regular fa-trash-can"></i>
+                                </button>
+                            </div>
+                        </div>
+            `;
+
+            // ul에 붙이기
+            let ul = document.querySelector("#list1");
+            ul.append(newItem);
+        })
+
+
+
+
     </script>
 </body>
 
