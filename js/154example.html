@@ -16,16 +16,11 @@
     <!-- .container>.row>.col -->
     <div class="container">
         <div class="row">
-            <div class="col">
+            <div class="col-12 col-lg-6">
                 <!-- .d-flex.justify-content-center.align-items-center -->
                 <div class="d-flex justify-content-center align-items-center py-5">
                     <h1>TODO LIST</h1>
                 </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col">
-                <!-- .input-group>input#input1.form-control+button#btn1.btn.btn-outline-secondary -->
                 <div class="input-group">
                     <input type="text" id="input1" class="form-control">
                     <button id="btn1" class="btn btn-outline-secondary">
@@ -33,16 +28,10 @@
                     </button>
                 </div>
             </div>
-        </div>
-    </div>
-
-    <!-- .container>.row>.col -->
-    <div class="container mt-4">
-        <div class="row">
-            <div class="col">
+            <div class="col-12 col-lg-6 mt-4">
                 <!-- ul#list1.list-group -->
                 <ul id="list1" class="list-group">
-                    
+
                 </ul>
             </div>
         </div>
@@ -57,7 +46,7 @@
         let globalSequence = 0;
 
         // + 클릭하면
-        document.querySelector("#btn1").addEventListener("click", function() {
+        document.querySelector("#btn1").addEventListener("click", function () {
             // sequence 1 더하기
             globalSequence++;
 
@@ -76,7 +65,7 @@
             // newdiv.textContent = v;
             // newItem.append(newdiv);
             // newItem.className = "list-group-item d-flex justify-content-between";
-            
+
             let newItem = document.createElement("li");
             newItem.className = "list-group-item d-flex justify-content-between";
 
@@ -100,7 +89,7 @@
 
             // dom 에 있는 done-btn-1 버튼에 click event 함수 추가하기
             let doneBtn = document.querySelector(`#done-btn-${sequence}`);
-            doneBtn.addEventListener("click", function() {
+            doneBtn.addEventListener("click", function () {
                 // 텍스트가 있는 요소에
                 let textDiv = document.querySelector(`#todo-text-${sequence}`);
                 // text-decoration-line-through 클래스 추가 / 삭제
@@ -125,7 +114,7 @@
             });
 
             // remove-btn-숫자 버튼을 클릭하면
-            document.querySelector(`#remove-btn-${sequence}`).addEventListener("click", function() {
+            document.querySelector(`#remove-btn-${sequence}`).addEventListener("click", function () {
                 // newItem 객체 삭제
                 newItem.remove();
             });
