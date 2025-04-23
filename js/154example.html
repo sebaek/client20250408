@@ -42,73 +42,7 @@
             <div class="col">
                 <!-- ul#list1.list-group -->
                 <ul id="list1" class="list-group">
-                    <!-- li.list-group-item.d-flex.justify-content-between*5>div*2 -->
-                    <li class="list-group-item d-flex justify-content-between">
-                        <div>빨래</div>
-                        <div>
-                            <!-- .d-flex.gap-2>button.btn.btn-primary.btn-sm*2 -->
-                            <div class="d-flex gap-2">
-                                <button class="btn btn-outline-info btn-sm">
-                                    <i class="fa-solid fa-check"></i>
-                                </button>
-                                <button class="btn btn-outline-danger btn-sm">
-                                    <i class="fa-regular fa-trash-can"></i>
-                                </button>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="list-group-item d-flex justify-content-between">
-                        <div class="text-decoration-line-through">청소</div>
-                        <div>
-                            <div class="d-flex gap-2">
-                                <button class="btn btn-outline-secondary btn-sm">
-                                    <i class="fa-solid fa-rotate-left"></i>
-                                </button>
-                                <button class="btn btn-outline-danger btn-sm">
-                                    <i class="fa-regular fa-trash-can"></i>
-                                </button>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="list-group-item d-flex justify-content-between">
-                        <div class="text-decoration-line-through">공부</div>
-                        <div>
-                            <div class="d-flex gap-2">
-                                <button class="btn btn-outline-secondary btn-sm">
-                                    <i class="fa-solid fa-rotate-left"></i>
-                                </button>
-                                <button class="btn btn-outline-danger btn-sm">
-                                    <i class="fa-regular fa-trash-can"></i>
-                                </button>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="list-group-item d-flex justify-content-between">
-                        <div>운동 하기 </div>
-                        <div>
-                            <div class="d-flex gap-2">
-                                <button class="btn btn-outline-info btn-sm">
-                                    <i class="fa-solid fa-check"></i>
-                                </button>
-                                <button class="btn btn-outline-danger btn-sm">
-                                    <i class="fa-regular fa-trash-can"></i>
-                                </button>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="list-group-item d-flex justify-content-between">
-                        <div>출근</div>
-                        <div>
-                            <div class="d-flex gap-2">
-                                <button class="btn btn-outline-info btn-sm">
-                                    <i class="fa-solid fa-check"></i>
-                                </button>
-                                <button class="btn btn-outline-danger btn-sm">
-                                    <i class="fa-regular fa-trash-can"></i>
-                                </button>
-                            </div>
-                        </div>
-                    </li>
+                    
                 </ul>
             </div>
         </div>
@@ -153,7 +87,7 @@
                                 <button id="done-btn-${sequence}" class="btn btn-outline-info btn-sm">
                                     <i class="fa-solid fa-check"></i>
                                 </button>
-                                <button class="btn btn-outline-danger btn-sm">
+                                <button id="remove-btn-${sequence}" class="btn btn-outline-danger btn-sm">
                                     <i class="fa-regular fa-trash-can"></i>
                                 </button>
                             </div>
@@ -188,7 +122,13 @@
                     doneBtn.classList.add("btn-outline-info");
                 }
 
-            })
+            });
+
+            // remove-btn-숫자 버튼을 클릭하면
+            document.querySelector(`#remove-btn-${sequence}`).addEventListener("click", function() {
+                // newItem 객체 삭제
+                newItem.remove();
+            });
         })
 
 
